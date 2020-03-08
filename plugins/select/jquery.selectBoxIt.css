@@ -1,0 +1,101 @@
+/* SelectBoxIt container */
+.selectboxit-container {
+  /*position: relative;*/
+  /*display: inline-block;*/
+  vertical-align: top;
+}
+
+.selectboxit {
+  width: 100%;
+  height: 45px;
+  display: block;
+  border: 1px solid #DBDBDB;
+  box-sizing: border-box;
+  position: relative;
+}
+/*.selectboxit li:hover {
+  background-color: gray;
+}*/
+.selectboxit-container .selectboxit {
+  width: 100% !important;
+  height: 45px;
+  position: relative;
+  
+}
+.selectboxit-container span, .selectboxit-container .selectboxit-options a {
+  font-size: 16px;
+  font-family: 'Artegra Sans Regular';
+  color: #000000;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*padding-left: 6px;*/
+  padding-top: 12px;
+  cursor: pointer;
+}
+.selectboxit-container .selectboxit-options a {
+  font-size: 14px;
+  font-family: 'Artegra Sans Light';
+}
+.icon::after {
+    content: '\2039';
+    position: absolute;
+    top: 4px;
+    right: 17px;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+    font: 32px Helvetica, Arial;
+    color: gray;
+}
+/*.selectboxit-container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}*/
+.selectboxit-options {
+  border: 1px solid #DBDBDB;
+  box-sizing: border-box;
+  width: 100% !important;
+  min-width: 100% !important;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.selectboxit-options li {
+  padding-top: 6px;
+  padding-bottom: 8px;
+  width: 100% !important;
+  height: 34px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.selectboxit,
+.selectboxit-container li {
+  background-color: white;
+}
+/*.selectboxit:hover,*/
+.selectboxit-container li:hover {
+  background-color: #FCB813;
+}
+
+
+/*Стрелка*/
+
+.icon_after.icon::after {
+  transform: rotate(90deg);
+  right: 13px;
+}
+
+.selectboxit-default-icon {
+  display: none;
+}
+/*.selectboxit-arrow-container {
+  position: absolute;
+  left: 0px;
+}*/
