@@ -421,18 +421,22 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	color: #333333;
-	/*display: flex;*/
+	display: flex;
 	position: relative;
 }
 .main_about h4 {
 	font-size: 18px;
 	text-align: left;
+	margin-top: 30px;
 }
 .main_about p {
 	font-family: 'Conv_RobotoRegular';
+	margin-top: 20px;
 }
 .main_about {
 	width: 460px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 .main_about_img {
 	position: absolute;
@@ -445,6 +449,7 @@ hr {
 	padding: 15px 30px;
 	border: 1px solid #333333;
 	text-align: center;
+	color: #333333;
 }
 .main_about_video {
 	padding: 15px 30px;
@@ -454,6 +459,7 @@ hr {
 .main_about_buttons {
 	display: flex;
 	justify-content: space-between;
+	margin-top: 30px;
 }
 .main_about_video {
 	color: white;
@@ -466,4 +472,19 @@ hr {
 	line-height: 4px;
 	position: relative;
 	top: 4px;
+}
+.main_about hr {
+	background-color: #333333;
+	margin-top: 10px;
+}
+#mainMap {
+	height: 100vh;
+	width: 100%;
+}
+#Map {
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	filter: grayscale(1);  
 }
