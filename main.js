@@ -38,13 +38,13 @@ $(function() {
 
 // fullpage
 
-// $("#fullpage").onepage_scroll({
-//    // sectionContainer: "section", // контейнер, к которому будет применяться скролл
-//    // easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
-//    // animationTime: 1000, // время анимации
-//    // pagination: false, // скрыть или отобразить пагинатор
-//    // updateURL: false // обновлять URL или нет
-// });
+$("#fullpage").onepage_scroll({
+   // sectionContainer: "section", // контейнер, к которому будет применяться скролл
+   // easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
+   // animationTime: 1000, // время анимации
+   // pagination: false, // скрыть или отобразить пагинатор
+   // updateURL: false // обновлять URL или нет
+});
 
 
 
@@ -96,11 +96,12 @@ ymaps.ready(init);
 		myMap.setType('yandex#hybrid');
 
 		
-  //       var myPlacemark = new ymaps.Placemark([59.92456406419882,30.359490499999954], {}, {
-  //   		iconLayout: 'default#image',
-		//     iconImageHref: 'img/main/pin.png',
-		//     iconImageSize: [44, 44],
-		//     iconImageOffset: [-10, -40]
-  //       });
-		// myMap.geoObjects.add(myPlacemark);
+        var myPlacemark = new ymaps.Placemark([55.1702213582919,61.37796458984373], {}, {
+    		iconLayout: 'default#image',
+		    iconImageHref: 'img/pin.png',
+		    iconImageSize: [44, 62],
+		    iconImageOffset: [-10, -40],
+		    // zIndex: 999,
+        });
+		myMap.geoObjects.add(myPlacemark);
     }
