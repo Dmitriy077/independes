@@ -36,22 +36,7 @@ $(function() {
 	});
 
 
-// onepage_scroll
 
-$("#fullpage").onepage_scroll({
-   // sectionContainer: "section", // контейнер, к которому будет применяться скролл
-   // easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
-   // animationTime: 1000, // время анимации
-   // pagination: false, // скрыть или отобразить пагинатор
-   // updateURL: false // обновлять URL или нет
-});
-
-
-$('.onepage-pagination').addClass('scroll_c');
-$('.onepage-pagination li:first-child a').html('<div class="icon_custom icon-home"><div class="icon_description"><p>Дом</p></div></div>');
-$('.onepage-pagination li:nth-child(2) a').html('<div class="icon_custom icon-cat"><div class="icon_description"><p>Категории</p></div></div>');
-$('.onepage-pagination li:nth-child(3) a').html('<div class="icon_custom icon-video"><div class="icon_description"><p>Видео</p></div></div>');
-$('.onepage-pagination li:nth-child(4) a').html('<div class="icon_custom icon-cont"><div class="icon_description"><p>Контакты</p></div></div>');
 
 
 
@@ -130,3 +115,29 @@ ymaps.ready(init);
         });
 		myMap.geoObjects.add(myPlacemark);
     }
+
+
+
+
+
+$(function() {
+
+// onepage_scroll
+
+$("#fullpage").onepage_scroll({
+   // sectionContainer: "section", // контейнер, к которому будет применяться скролл
+   // easing: "ease", // Тип анимации "ease", "linear", "ease-in", "ease-out", "ease-in-out"
+   // animationTime: 1000, // время анимации
+   // pagination: false, // скрыть или отобразить пагинатор
+   // updateURL: false // обновлять URL или нет
+});
+
+
+$('.onepage-pagination').addClass('scroll_c');
+$('.onepage-pagination li:first-child a').html('<div class="icon_custom icon-home"><div class="icon_description"><p>Дом</p></div></div>');
+$('.onepage-pagination li:nth-child(2) a').html('<div class="icon_custom icon-cat"><div class="icon_description"><p>Категории</p></div></div>');
+$('.onepage-pagination li:nth-child(3) a').html('<div class="icon_custom icon-video"><div class="icon_description"><p>Видео</p></div></div>');
+$('.onepage-pagination li:nth-child(4) a').html('<div class="icon_custom icon-cont"><div class="icon_description"><p>Контакты</p></div></div>');
+
+
+});

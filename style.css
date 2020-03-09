@@ -523,7 +523,7 @@ hr {
 	width: 100%;
 }
 .main_contacts_caption {
-	width: 80%;
+	width: 78%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 76px;
@@ -802,6 +802,8 @@ a.active {
 	display: flex;
 	font-family: 'Conv_RobotoRegular';
 	color: #333333;
+	margin-top: 22px;
+	margin-bottom: 60px;
 }
 .contacts_left {
 	flex: 1.5;
@@ -813,6 +815,7 @@ a.active {
 .contacts_right .popup_form_wrap {
 	background-color: #F2F2F2;
 	padding-top: 30px;
+	padding-bottom: 30px;
 
 }
 .contacts h4 {
@@ -823,4 +826,108 @@ a.active {
 }
 .contacts p {
 	font-family: 'Conv_RobotoRegular';
+}
+.contacts_block {
+	display: flex;
+	margin-bottom: 16px;
+	cursor: pointer;
+}
+.contacts_block:hover .contacts_block_img {
+    box-shadow: 0px 7px 10px rgba(109, 110, 134, 0.25);
+    border: none;
+}
+.contacts_block_img {
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin-right: 20px;
+	border: 1px solid #F2F2F2;
+	display: flex;
+}
+
+.contacts_block img {
+	margin: auto;
+	width: 30px;
+}
+	
+.contacts_block:nth-child(3) img {
+	width: 20px;
+}
+.contacts_block p {
+	font-size: 12px;
+	opacity: 0.5;
+}
+.contacts_block p:nth-child(2) {
+	font-family: 'Conv_RobotoBold';
+	font-size: 18px;
+	opacity: 1;
+}
+.contacts_block_phone a {
+	font-size: 18px;
+	color: #fdb900;
+}
+.contacts_block_mail a {
+	text-decoration: underline;
+	color: #333333;
+	font-size: 18px;
+}
+.contacts_block_mail a:hover {
+	color: #fdb900;
+
+}
+.contacts_block_phone,
+.contacts_block_mail,
+.contacts_block_address {
+	margin-top: 15px;
+}
+.contacts_block_list {
+	margin-top: 40px;
+}
+.about_block {
+	display: flex;
+	margin-top: 44px;
+}
+.about_block_img {
+	flex: 1;
+}
+.about_block_img img {
+	width: 100%;
+}
+.about_block_content {
+	flex: 1;
+	display: flex;
+}
+.about_block_content_text {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 80%;
+}
+h2 {
+	font-size: 19px;
+	text-transform: uppercase;
+}
+.about_block_content_text p:nth-child(2) {
+	margin-top: 24px;
+	font-family: 'Conv_RobotoRegular';
+}
+.about_block_content_text p:nth-child(3) {
+	margin-top: 20px;
+	line-height: 19px;
+	font-size: 12px;
+	font-family: 'Conv_RobotoRegular';
+}
+.about {
+	margin-top: 24px;
+	color: #333333;
+}
+.about_block:nth-child(2n) {
+	flex-direction: row-reverse;
+}
+.about_block:nth-child(2n) .about_block_content_text {
+	margin-left: 0;
+}
+.about_block:last-child {
+	margin-bottom: 80px;
 }
