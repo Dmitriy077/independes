@@ -36,7 +36,7 @@ $(function() {
 	});
 
 
-// fullpage
+// onepage_scroll
 
 $("#fullpage").onepage_scroll({
    // sectionContainer: "section", // контейнер, к которому будет применяться скролл
@@ -47,16 +47,41 @@ $("#fullpage").onepage_scroll({
 });
 
 
+$('.onepage-pagination').addClass('scroll_c');
+$('.onepage-pagination li:first-child a').html('<div class="icon_custom icon-home"><div class="icon_description"><p>Дом</p></div></div>');
+$('.onepage-pagination li:nth-child(2) a').html('<div class="icon_custom icon-cat"><div class="icon_description"><p>Категории</p></div></div>');
+$('.onepage-pagination li:nth-child(3) a').html('<div class="icon_custom icon-video"><div class="icon_description"><p>Видео</p></div></div>');
+$('.onepage-pagination li:nth-child(4) a').html('<div class="icon_custom icon-cont"><div class="icon_description"><p>Контакты</p></div></div>');
+
+
+
+// Маски
+
+$(".form_tel").mask("+7 (999) 999-9999");
 
 
 
 
 
+// popup
 
+$('form').submit(function() {
+	return false;
+});
 
+$('.header_push').on('click', function() {
+	$(".popup_wrap").css('display', 'flex');
+});
 
-
-
+$('.popup_esc').on('click', function() {
+	$(".popup_wrap").hide();
+});
+$(document).mouseup(function (e) {
+    var container = $(".popup_wrap");
+    if (container.has(e.target).length === 0){
+        container.hide();
+    }
+});
 
 
 
