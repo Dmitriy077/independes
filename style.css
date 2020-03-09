@@ -88,6 +88,10 @@ body {
 .container_header a {
 	color: white;
 }
+.header {
+	min-width: 1280px;
+	background-color: #333333;
+}
 .header_main {
 	position: absolute;
 	top: 0px;
@@ -138,12 +142,12 @@ body {
 .header_nav a {
 	font-size: 12px;
 	text-transform: uppercase;
-	padding: 29px 0;
+	padding: 29px 0 28px;
 	display: block;
 	box-sizing: border-box;
 }
 .header_nav>ul>li>a:hover {
-	border-bottom: 1px solid #fdb900;
+	border-bottom: 2px solid #fdb900;
 }
 .header_nav li {
 	margin-right: 30px;
@@ -175,7 +179,7 @@ body {
 	position: absolute;
 	/*display: flex;*/
 	flex-direction: column;
-	top: 76px;
+	top: 74px;
 	background-color: #0000008c;
 	padding: 0 20px;
 }
@@ -246,6 +250,7 @@ img.background_title {
 	display: flex;
 	flex-direction: column;
 	padding-top: 140px;
+	max-width: 1600px;
 }
 .slide_content h1 {
 	margin-left: auto;
@@ -328,6 +333,7 @@ h1 {
 .main_catigories_wrap {
 	width: 78%;
 	margin: auto;
+	max-width: 1600px;
 }
 .caption {
 	display: flex;
@@ -380,6 +386,7 @@ hr {
 	height: auto;
 	box-sizing: border-box;
 	margin-top: 14px;
+	cursor: pointer;
 }
 .main_catigories_img {
 	border: 1px solid #E8E8E8;
@@ -432,6 +439,7 @@ hr {
 	color: #333333;
 	display: flex;
 	position: relative;
+	max-width: 1600px;
 }
 .main_about h4 {
 	font-size: 18px;
@@ -520,6 +528,7 @@ hr {
 	margin-right: auto;
 	margin-top: 76px;
 	color: white;
+	max-width: 1600px;
 }
 .main_contacts_caption h1,
 .main_contacts_caption hr {
@@ -543,11 +552,9 @@ footer {
 	z-index: 1;
 	background-color: #060606bf;
 	box-sizing: border-box;
+	max-width: 1600px;
 
 }
-/*#fullpage {
-	position: relative;
-}*/
 .footer {
 	width: 100%;
 	padding: 70px 80px 40px 80px;
@@ -771,4 +778,49 @@ a.active {
 	background-color: #fdb900;
 	margin-left: auto;
 	cursor: pointer;
+}
+.breadcrumbs a,
+.breadcrumbs span {
+	font-size: 10.4px;
+	color: #333333;
+	font-family: 'Conv_RobotoRegular';
+}
+.breadcrumbs span {
+	opacity: 0.5;
+}
+.container	{
+	width: 78%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.breadcrumbs {
+	padding: 10px 0 12px;
+	background-color: #F2F2F2;
+}
+.contacts {
+	display: flex;
+	font-family: 'Conv_RobotoRegular';
+	color: #333333;
+}
+.contacts_left {
+	flex: 1.5;
+	padding-right: 60px;
+}
+.contacts_right {
+	flex: 1;
+}
+.contacts_right .popup_form_wrap {
+	background-color: #F2F2F2;
+	padding-top: 30px;
+
+}
+.contacts h4 {
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: 'Conv_RobotoRegular';
+}
+.contacts p {
+	font-family: 'Conv_RobotoRegular';
 }
